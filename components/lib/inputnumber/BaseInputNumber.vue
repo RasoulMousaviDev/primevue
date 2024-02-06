@@ -156,6 +156,10 @@ export default {
         ariaLabel: {
             type: String,
             default: null
+        },
+        sync:{
+            type: Boolean,
+            default: false
         }
     },
     style: InputNumberStyle,
