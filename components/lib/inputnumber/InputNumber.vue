@@ -528,6 +528,10 @@ export default {
                     break;
 
                 default:
+                    if (this.sync) {
+                        this.updateModel(event, this.modelValue);
+                        event.preventDefault();
+                    }
                     break;
             }
         },
